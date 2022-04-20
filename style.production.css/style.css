@@ -359,9 +359,17 @@ button:focus,
 #Contanct-i {
   text-align: center;
 }
+.container {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 .location_how_to_reach {
-  display: block;
+  width: 50%;
   font-style: normal;
+  flex-direction:column;
   font-size: 16px;
   padding: 10px;
 }
@@ -380,6 +388,7 @@ button:focus,
   width: 40%;
   padding: 40px; /* Adds a 10px inner spacing to all sides*/
   margin: 10px; /* Adds a 10px outer spacing to all sides*/
+  background-color: #fff;
 }
 .contactboard h2 {
   font-size: 30px;
@@ -391,30 +400,28 @@ button:focus,
   width: 100%;
   margin-top: 10px;
 }
-.contactboard .inputbox input .contactboard .inputbox textarea {
-  /* width: 100% */
+.contactboard .inputbox input,
+.contactboard .inputbox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  pointer-events: none;
   border-bottom: 2px solid cornflowerblue;
-  outline: none;
+  outline:none;
   resize: none;
 }
 .contactboard .inputbox label {
-  /* position: */
   left: 0;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
-  -webkit-transition: 0, 5s;
-  transition: 0, 5s;
-  color: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color:#666;
 }
-.table {
+table {
   text-align: left;
   font-size: 16px;
 }
@@ -430,10 +437,11 @@ button:focus,
     grid-template-columns: 1fr 1fr;
   }
 }
-@media all and (max-width: 750px)
+@media all and (max-width: 750px){
   .grid {
-    grid-gap: 10px;
-  }
+      grid-gap: 10px;
+    }
+}
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
