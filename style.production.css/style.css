@@ -425,13 +425,13 @@ table {
   text-align: left;
   font-size: 16px;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 900px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 900px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
