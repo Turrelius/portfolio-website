@@ -149,28 +149,17 @@ button:focus,
  .topnav {
    overflow: hidden;
    background-color: #333;
-<<<<<<< HEAD
-   position:relative;
- }
-=======
    position: relative;
  }
 
->>>>>>> gh-pages
  /* Hide the links inside the navigation menu (except for logo/home) */
  .topnav #myLinks {
    display: none;
  }
-<<<<<<< HEAD
- /* Style navigation menu links */
- .topnav a {
-   color: #f0f8ff;
-=======
 
  /* Style navigation menu links */
  .topnav a {
    color: white;
->>>>>>> gh-pages
    padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
@@ -179,11 +168,7 @@ button:focus,
 
  /* Style the hamburger menu */
  .topnav a.icon {
-<<<<<<< HEAD
-   background:black;
-=======
    background: black;
->>>>>>> gh-pages
    display: block;
    position: absolute;
    right: 0;
@@ -192,17 +177,6 @@ button:focus,
 
  /* Add a grey background color on mouse-over */
  .topnav a:hover {
-<<<<<<< HEAD
-   background-color: #f0f8ff;
-   color:black;
- }
- /* Style the active link (or home/logo) */
-.active {
-  background-color:#f0f8ff;
-  color: white;
-}
-
-=======
    background-color: #ddd;
    color: black;
  }
@@ -212,7 +186,6 @@ button:focus,
    background-color:  #f0f8ff;
    color: white;
  }
->>>>>>> gh-pages
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
