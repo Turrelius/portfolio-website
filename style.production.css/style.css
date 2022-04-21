@@ -1,5 +1,12 @@
 /*
 * Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 2 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
 * Browsers: last 2 version
@@ -138,13 +145,45 @@ button:focus,
   background-color: #e0b354;
   color: #2b2b2b;
  }
-.navigation-list__item--active {
-  list-style-type: none;
+ /* Style the navigation menu */
+ .topnav {
+   overflow: hidden;
+   background-color: #333;
+   position:relative;
+ }
+ /* Hide the links inside the navigation menu (except for logo/home) */
+ .topnav #myLinks {
+   display: none;
+ }
+ /* Style navigation menu links */
+ .topnav a {
+   color: #f0f8ff;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   display: block;
+ }
+
+ /* Style the hamburger menu */
+ .topnav a.icon {
+   background:black;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+
+ /* Add a grey background color on mouse-over */
+ .topnav a:hover {
+   background-color: #f0f8ff;
+   color:black;
+ }
+ /* Style the active link (or home/logo) */
+.active {
+  background-color:#f0f8ff;
+  color: white;
 }
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,15 +400,24 @@ button:focus,
 }
 .container {
   width: 100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
 }
 .location_how_to_reach {
   width: 50%;
   font-style: normal;
-  flex-direction:column;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
   font-size: 16px;
   padding: 10px;
 }
@@ -425,13 +473,13 @@ table {
   text-align: left;
   font-size: 16px;
 }
-@media all and (max-width: 900px) {
+@media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 900px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;

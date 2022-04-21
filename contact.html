@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Contact Pablo</title>
     <link rel="shortcut icon" type="image/png" href="./img/link-32x32.png" />
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="description" content="this is Andres Pablo Hinrikssons site working progress">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css"
      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet"  href="style.production.css/style.css">
   </head>
-
     <body>
-      <h1 id="Contanct-i">Contact info</h1>
+      <h1 id="Contanct-i">Contanct info</h1>
 <!-- Header including the logo and the main navigation -->
-<header class="page-header">
-  <!--added logo here -->
-  <img class="profile-logo page-header__item" alt="profile-logo" src="img/logo_stretched.jpg"/>
-  <nav class="main-navigation page-header__item">
-    <ul role="menubar" class="navigation-list">
-      <li role="presentation">
-        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-      </li>
-      <li role="presentation">
-        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About
-          Me</a>
-      </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My
-          projects</a>
-      </li>
-      <li role="presentation">
-        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-      </li>
-    </ul>
-  </nav>
+<header>
+  <!-- <nav class="main-navigation" class"page-header_item"> -->
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+<img class="profile-logo page-header__item" alt="Profile-logo" src="img/logo_stretched.jpg" />
+<!-- Navigation links (hidden by default) -->
+<div id="myLinks">
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="work.html">My Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
 </header>
     <!-- Main content -->
     <main  class="container">
@@ -96,5 +92,15 @@
   </div>
 </footer>
 <script src="js/tota11y.min.js"></script>
+<script>
+function myFunction() {
+var x = document.getElementById("myLinks");
+if (x.style.display === "block") {
+  x.style.display = "none";
+} else {
+  x.style.display = "block";
+}
+}
+</script>
 </body>
 </html>
