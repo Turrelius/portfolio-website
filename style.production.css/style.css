@@ -2,6 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.12,
 * Autoprefixer: v10.4.4
+<<<<<<< Updated upstream
 * Browsers: last 2 version
 */
 
@@ -9,8 +10,11 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
+=======
+>>>>>>> Stashed changes
 * Browsers: last 2 version
 */
+
 
 /*
   Colors used
@@ -28,7 +32,7 @@
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
-  background-color: #f0f8ff;
+/*  background-color:#f0f8ff; */
   padding: 10px; /* Adds a 10px inner spacing to all sides*/
   margin: 10px; /* Adds a 10px outer spacing to all sides*/
 }
@@ -47,9 +51,14 @@
 }
 
 .profile-logo {
-  /* position: relative; */
-  top: 20px;
-  left: 20px;
+  float:center;
+  top: 15px;
+  left: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 * {
@@ -72,18 +81,18 @@ h3 {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-}
-ul {
-  list-style-type: none;
-}
+ }
 a {
   color: #357b70;
   /*color teal*/
 }
+p {
+  text-align: center;
+}
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
-  text-decoration: none;
+  color:black;
 }
 a:visited {
   /* visited link */
@@ -92,45 +101,60 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color: #333;
+}
+ul {
+  list-style-type: none;
 }
 input,
 texture,
-select,
-button {
+select, {
   cursor: pointer;
   font-family: system-ui;
 }
-.button1, button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+ .topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
 }
-.button2 {
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+.topnav_item {
+  float: right;
 }
-.button3 {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+.topnav_item a {
+  display: block;
+  color:#357b70;
+  text-align: center;
+  padding: 14px 16px;
+}
+@media screen and (max-width: 600px) {
+.topnav,.topnav_item .right,
+.topnav,.topnav_item {float: none;}
+}
+
+/*topnav_item a:hover {
+  background-color: #111;
+}
+*/
+.button {
+ /* overwrites browser defaults and resets the border */
+ border: none;
+ display: inline-block;
+ /* takes the font from the outer container */
+ font-family: inherit;
+ /* styles the button */
+ background-color: #357b70;
+ color: white;
+ text-decoration: none;
+ padding: 10px;
+ border-radius: 3px;
+ /* width of the border, type, color */
+ border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+ -webkit-transition-duration: 0.2s;
+         transition-duration: 0.2s;
+ -webkit-transition-property: opacity;
+ transition-property: opacity;
 }
 button:hover,
 button:focus,
@@ -141,51 +165,6 @@ button:focus,
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
-.button_secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
- }
- /* Style the navigation menu */
- .topnav {
-   overflow: hidden;
-   background-color: #333;
-   position: relative;
- }
-
- /* Hide the links inside the navigation menu (except for logo/home) */
- .topnav #myLinks {
-   display: none;
- }
-
- /* Style navigation menu links */
- .topnav a {
-   color: white;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 17px;
-   display: block;
- }
-
- /* Style the hamburger menu */
- .topnav a.icon {
-   background: black;
-   display: block;
-   position: absolute;
-   right: 0;
-   top: 0;
- }
-
- /* Add a grey background color on mouse-over */
- .topnav a:hover {
-   background-color: #ddd;
-   color: black;
- }
-
- /* Style the active link (or home/logo) */
- .active {
-   background-color:  #f0f8ff;
-   color: white;
- }
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +235,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color:ghostwhite;
+background-color: inherit;
  }
   .grid__item:last-child {
  /*grid-column-start at 3 and grid-column-ends at 3.*/
@@ -472,9 +451,13 @@ button:focus,
   color:#666;
 }
 table {
-  text-align: left;
+  text-align: center;
   font-size: 16px;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;

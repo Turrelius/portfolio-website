@@ -6,7 +6,6 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="this is Andres Pablo Hinrikssons site working progress">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css"
      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -16,20 +15,25 @@
       <h1 id="Contanct-i">Contanct info</h1>
 <!-- Header including the logo and the main navigation -->
 <header>
-  <div class="topnav">
-  <img class="profile-logo page-header__item" alt="Profile-logo" src="img/logo_stretched.jpg" />
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="work.html">My Projects</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  </div>
+  <img class="profile-logo" alt="Profile-logo" src="img/logo_size1.jpg" />
+  <nav>
+    <!-- Navigation links (hidden by default) -->
+    <ul role="menubar" class="topnav">
+      <li role="presentation" class="topnav_item">
+      <a href="index.html" role="menuitem">Home</a>
+      </li>
+      <li role="presentation" class="topnav_item">
+      <a href="about.html" role="menuitem">About Me</a>
+      </li>
+      <li role="presentation" class="topnav_item">
+      <a href="work.html" role="menuitem">My Projects</a>
+      </li>
+      <li role="presentation" class="topnav_item">
+      <a href="contact.html" role="menuitem">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
     <main  class="container">
     <!--article contains owner contact info and location -->
     <section class="location_how_to_reach">
@@ -88,15 +92,5 @@
   </div>
 </footer>
 <script src="js/tota11y.min.js"></script>
-<script>
-function myFunction() {
-var x = document.getElementById("myLinks");
-if (x.style.display === "block") {
-  x.style.display = "none";
-} else {
-  x.style.display = "block";
-}
-}
-</script>
 </body>
 </html>
