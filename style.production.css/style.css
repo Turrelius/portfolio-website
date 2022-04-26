@@ -402,6 +402,11 @@ background-color: inherit;
   font-size: 16px;
   padding: 10px;
 }
+@media screen and (max-width: 600px) {
+  .location_how_to_reach, .contactboard {width: 100%}
+ .container {flex-wrap: wrap;}
+}
+
 .page-footer {
   clear: both;
   display: -webkit-box;
